@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>
+        responsive nav_bar
+    </title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="p-3 flex items-center justify-between bg-purple-300">
+        <a href="" class="flex items-center gap-2">
+            <img class="max-w-10 max-h-10 object-cover rounded-lg" src="/images/web_icon.jpeg" alt="logo">
+            <span class="text-large font-medium font-display">ToDesktop</span>
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="" class="font-medium hover:text-red-300">Pricing</a>
+            <a href="" class="font-medium hover:text-red-300">Docs</a>
+            <a href="" class="font-medium hover:text-red-300">Changlog</a>
+            <a href="" class="font-medium hover:text-red-300">Blogs</a>
+            <a href="" class="font-medium hover:text-red-300">Login</a>
+        </div>
+        <button
+            class="bg-purple-400 font-medium hidden lg:flex items-center gap-2 border-2 border-gray-800 px-4 py-2 rounded-lg hover:border-gray-600">
+            <img class="max-w-7 max-h-7 object-cover rounded-full border-2-black " src="/images/circle_icon_image.jpg"
+                alt="circle.icon">
+            <span>Electron Developers</span>
+            <i class="fa-solid fa-arrow-right pt-1"></i>
+
+        </button>
+
+        <button class="p-2 md:hidden" onClick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+        <div id="nav-dialog" class="p-3 fixed z-10 bg-red-300 inset-0 hidden md:hidden">
+            <div class=" flex items-center justify-between" id="nav-bar">
+                <a href="" class="flex items-center gap-2">
+                    <img class="max-w-10 max-h-10 object-cover rounded-lg" src="/images/web_icon.jpeg" alt="logo">
+                    <span class="text-large font-medium font-display">ToDesktop</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark"> </i>
+                </button>
+            </div>
+            <div class="mt-6">
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"">Doc</a>
+                <a href=" #" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"">Changlog</a>
+                <a href=" #" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"">Blog</a>
+                <a href=" #" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"">Login</a>
+            </div>
+            <div class=" h-[1px] bg-gray-600">
+            </div>
+            <button
+                class="w-full bg-purple-400 font-medium flex items-center gap-2 border-2 border-gray-800 mt-6 ml-4 px-4 py-2 rounded-lg hover:bg-purple-300 ">
+                <img class="max-w-7 max-h-7 object-cover rounded-full border-2-black "
+                    src="/images/circle_icon_image.jpg" alt="circle.icon">
+                <span>Electron Developers</span>
+
+            </button>
+
+        </div>
+    </nav>
+</body>
+<script src=" index.js"></script>
+
+</html>
